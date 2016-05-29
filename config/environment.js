@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'rest-simple-message',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' http://localhost:*" },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
